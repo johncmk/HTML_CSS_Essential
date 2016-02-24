@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dynamic Layout</title>
+
+
+	<style type="text/css">
+
+		@media screen and (max-width: 767px) {
+			#wrap {
+				width: 100%
+			}
+
+			#content_wrap #content p {
+				font-size: 3em;
+				font-weight: bold;
+			}
+		}
+
+		@media screen and (min-width: 768px) and (max-width: 959px) {
+			#wrap {
+				width: 100%;
+			}
+
+			#content_wrap #content p {
+				font-size: 1.5em;
+				font-weight: bold;
+			}
+		}
+
+		@media screen and (min-width: 960px) {
+			#wrap {
+				width: 80%;
+			}
+
+			#content_wrap #content p {
+				font-size: 1em;
+				font-weight: bold;
+			}
+		}
+
+		* {
+			margin: 0;
+			padding: 0;
+		}
+
+		li {
+			list-style: none;
+		}
+
+		#wrap {
+			margin: 0 auto;
+		}
+
+		#header {
+			border:1px solid #cccccc;
+			height: 100px;
+		}
+
+		#header > h1 {
+			text-align: center;
+		}
+
+		#nav {
+			border: 1px solid #cccccc;
+		}
+
+		#nav ul {
+			overflow: hidden;
+		}
+
+		#nav ul li {
+			float: left;
+			text-align: center;
+			width: 20%;
+			height: 60px;
+			border: 1px solid #cccccc;
+			box-sizing: border-box;
+		}
+
+		#content_wrap {
+			border: 1px solid #cccccc;
+		}
+
+		#content_wrap #content {
+			padding:10px;
+		}
+
+		#content_wrap #content > h2 {
+			border-bottom: 1px solid #cccccc;
+			margin-bottom: 10px;
+		}
+
+		#footer {
+			height: 100px;
+			line-height: 100px;
+			text-align: center;
+			font-size: 1.5em;
+			font-weight: bold;
+			margin: 0 auto;
+			border: 1px solid #cccccc;
+		}
+	</style>
+</head>
+<body>
+
+	<div id="wrap">
+        <div id="header">
+            <h1>HEADER</h1>
+        </div>
+
+        <div id="nav">
+            <ul>
+                <li>menu1</li>
+                <li>menu2</li>
+                <li>menu3</li>
+                <li>menu4</li>
+                <li>menu5</li>
+            </ul>
+        </div>
+
+        <div id="content_wrap">
+            <div id="content">
+                <h2>Activity</h2>
+                <p>
+					Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus quis nulla nec augue volutpat ornare non et tortor. Suspendisse tellus nunc, congue ut ipsum eget, sagittis varius nisi. Maecenas sit amet maximus justo, id porttitor purus. Maecenas a augue sagittis, commodo nulla sed, finibus augue. Praesent quam ex, aliquam vel nulla sed, tempor congue erat. In tempor nunc quis rhoncus sodales. Nulla porttitor felis vitae sapien dapibus, ac laoreet nunc fringilla. Curabitur sollicitudin leo vitae sollicitudin congue. Vestibulum vel elit sit amet velit efficitur posuere eu ut nisl. Etiam pharetra tempus ante, quis convallis velit elementum sit amet. Mauris non lectus nisi. Aliquam quis erat imperdiet, convallis elit non, volutpat arcu. Nam finibus faucibus convallis.
+				</p>
+                    
+            </div>
+        </div>
+        <div id="footer">
+            Footer
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Layout</title>
+
+	<style>
+
+	div {
+		border: 1px solid #cccccc;
+		padding: 5px;
+		margin: 5px;
+		text-align: center;
+	}
+
+	#con {
+		width:800px;
+		margin: 0 auto;
+		overflow: hidden;
+	}
+
+	#header {
+		height: 100px;
+		line-height: 100px;
+		width: 780px;
+	}
+
+	#header > p {
+		text-align: center;
+	}
+
+	#nav {
+		width: 780px;
+		height: 100px;
+		overflow: hidden;
+	}
+
+	#nav > ul > li {
+		width:138px;
+		height:40px;
+		line-height: 40px;
+		text-align:center;
+		list-style: none;
+		float: left;
+		border: 1px solid #dddddd;
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#d8ef09+0,28bcd6+30,e6ff0a+58,e6ff0a+61,e6ff0a+61,e6ff0a+65,e6ff0a+65,7db9e8+100 */
+		background: #d8ef09; /* Old browsers */
+		background: -moz-linear-gradient(top,  #d8ef09 0%, #28bcd6 30%, #e6ff0a 58%, #e6ff0a 61%, #e6ff0a 61%, #e6ff0a 65%, #e6ff0a 65%, #7db9e8 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(top,  #d8ef09 0%,#28bcd6 30%,#e6ff0a 58%,#e6ff0a 61%,#e6ff0a 61%,#e6ff0a 65%,#e6ff0a 65%,#7db9e8 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to bottom,  #d8ef09 0%,#28bcd6 30%,#e6ff0a 58%,#e6ff0a 61%,#e6ff0a 61%,#e6ff0a 65%,#e6ff0a 65%,#7db9e8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d8ef09', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */
+
+
+	}
+
+	#wrap {
+		width: 780px;
+		overflow: hidden;
+	}
+
+	#content {
+		width: 600px;
+		height: 300px;
+		float: left;
+	}
+
+	#banner {
+		width: 135px;
+		height: 300px;
+		float: left;
+	}
+
+	#footer {
+		width: 780px;
+		height: 100px;
+		line-height: 100px;
+	}
+
+	</style>
+
+</head>
+<body>
+
+<div id="con">
+
+	<div id="header">
+		Header
+	</div>
+
+	<div id="nav">
+		Navigation
+		<ul>
+			<li>menu1</li>
+			<li>menu2</li>
+			<li>menu3</li>
+			<li>menu4</li>
+			<li>menu5</li>
+		</ul>
+	</div>
+
+	<div id="wrap">
+		<div id="content">Content
+		
+		</div>
+		<div id="banner">Banner
+		
+		</div>
+		
+	</div>
+
+	<div id="footer">Footer</div>
+	
+</div>
+
+</body>
+</html>

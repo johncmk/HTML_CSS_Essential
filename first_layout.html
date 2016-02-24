@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>First Layout</title>
+
+	<style>
+
+		#header, #content, #footer {
+			width: 1000px;
+			margin: 0 auto;
+			overflow: hidden;
+		}
+
+		#header .left_space, #content .left_space, #footer .left_space {
+			width: 150px;
+			height: 150px;
+			float: left;
+			background-color: #f3f3f3;
+			border: 1px solid #ccc;
+		}
+
+
+		#header .center_space, #content .center_space, #footer .center_space {
+			width: 694px;
+			height: 150px;
+			float: left;
+			background-color: #f3f3f3;
+			border: 1px solid #ccc;
+		}
+
+		#header .right_space, #content .right_space, #footer .right_space {
+			width: 150px;
+			height: 150px;
+			float: right;
+			background-color: #f3f3f3;
+			border: 1px solid #ccc;
+		}
+
+		#header .left_space , #footer .right_space {
+			border-radius: 30px 0;
+		}
+
+		#header .right_space, #footer .left_space {
+			border-radius: 0 30px;
+		}
+
+		#content .left_space {
+			border-radius: 0 30px 30px 0;
+			height: 300px;
+		}
+
+		#content .right_space {
+			border-radius: 30px 0 0 30px;
+			height: 300px;
+		}
+
+		#header .center_space {
+			border-radius: 0 0 30px 30px;
+		}
+
+		#content .center_space {
+			border-radius:30px;
+			height: 300px;
+		}
+
+		#footer .center_space {
+			border-radius: 30px 30px 0 0;
+		}
+
+		#content .center_space ul li {
+			list-style: none;
+			float:left;
+			padding: 0 40px;
+			font-weight: bold;
+			font-size: 20px;
+		}
+
+		#content .activity {
+			clear:both;
+			padding:10px;
+		}
+
+	</style>
+</head>
+<body>
+
+	<div id="header">
+		<div class="left_space"></div>
+		<div class="center_space"></div>
+		<div class="right_space"></div>
+	</div>
+
+	<div id="content">
+		<div class="left_space"></div>
+		<div class="center_space">
+			<div>
+				<ul>
+					<li>menu1</li>
+					<li>menu2</li>
+					<li>menu3</li>
+					<li>menu4</li>
+				</ul>	
+			</div>
+			<div class="activity">
+				<h1>This is what we do</h1>
+				<p>
+					Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
+					Vivamus quis nulla nec augue volutpat ornare non et tortor. Suspendisse tellus nunc, congue ut ipsum eget, 
+					sagittis varius nisi. Maecenas sit amet maximus justo, id porttitor purus. Maecenas a augue sagittis, 
+					commodo nulla sed, finibus augue. Praesent quam ex, aliquam vel nulla sed, tempor congue erat. 
+					In tempor nunc quis rhoncus sodales. Nulla porttitor felis vitae sapien dapibus, 
+					ac laoreet nunc fringilla. Curabitur sollicitudin leo vitae sollicitudin congue. 
+					Vestibulum vel elit sit amet velit efficitur posuere eu ut nisl. Etiam pharetra tempus ante, 
+					quis convallis velit elementum sit amet. Mauris non lectus nisi. Aliquam quis erat imperdiet, 
+					convallis elit non, volutpat arcu. Nam finibus faucibus convallis.
+				</p>
+			</div>
+		</div>
+		<div class="right_space"></div>
+	</div>
+	<div id="footer">
+		<div class="left_space"></div>
+		<div class="center_space"></div>
+		<div class="right_space"></div>
+	</div>	
+
+</body>
+</html>
